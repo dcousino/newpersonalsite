@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  font-family: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, "Roboto",
+    "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+
+  --vscode-editor-background: #0f1117;
+  --vscode-editor-foreground: #d4d4d4;
+  --vscode-foreground: #d4d4d4;
+
+  --brand-microsoft: #f25022;
+  --brand-philips: #0a5ed7;
+  --brand-ups: #351c15;
+  --brand-usmc: #a6192e;
+  --accent-azure: #007acc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: rgba(127, 219, 255, 0.35);
+  color: #ffffff;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(
+      120% 120% at 0% 0%,
+      rgba(0, 122, 204, 0.28),
+      transparent 55%
+    ),
+    radial-gradient(
+      100% 100% at 80% 0%,
+      rgba(166, 25, 46, 0.12),
+      transparent 60%
+    ),
+    var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  caret-color: #7fdbff;
+}
+
+a {
+  color: #7fdbff;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+a:hover {
+  color: #a6e8ff;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+pre {
+  font-family: "Fira Code", "Cascadia Code", "Consolas", monospace;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+*:focus-visible {
+  outline: 2px solid rgba(127, 219, 255, 0.8);
+  outline-offset: 3px;
+}
